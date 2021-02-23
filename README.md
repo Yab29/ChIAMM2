@@ -1,6 +1,6 @@
 ## **ChIAMM2**
 ## Introduction
-**Ch**romatin **I**nteraction **A**nalysis with **P**aired-**E**nd **T**ag (**ChIA-PET**) sequencing is a technology to study genome-wide long-range chromatin interactions bound by protein factors. **ChIAMM2** is a statistical technique for processing and analyzing ChIA-PET sequence data using the Mixture model in the Bayesian framework. 
+**Ch**romatin **I**nteraction **A**nalysis with **P**aired-**E**nd **T**ag (**ChIA-PET**) sequencing is a technology to study genome-wide long-range chromatin interactions bound by protein factors. **ChIAMM2** is the updated form of **ChIAMM**, used to design for processing and to analyze ChIA-PET sequence data using the Mixture model in the Bayesian framework. 
 ### The ChIAMM2 requires the following dependencies:
 > 1) &nbsp; R (≥3.4.0) <br />
 > 2) &nbsp; StanHeaders (≥ 2.18.1)<br />
@@ -60,7 +60,7 @@ We need to organize the input file for inter- and intra-chromosomal interaction 
          -e| --inter      the input is inter-chromosomal, if not, intra-chromosomal interactions data
          -r| --iter       iteration number (default 5000)
          -w| --warmup     warmup value (default 750)
-         -h |--help       print help
+         -h|--help       print help
 ### Example 
 For intra- and inter-chromosomal interactions, we need to run the ChIAMM2.R separately.
 -	For intra-chromosomal interaction data:
