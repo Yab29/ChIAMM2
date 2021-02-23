@@ -24,9 +24,9 @@ Using the out.spet file in the ChIA-PET Tool V3 output, we can compute the self-
 
 #### 3) Mappability 
 Download the mappability score for human genome version hg19 using http://genome-asia.ucsc.edu/cgi-bin/hgFileUi?db=hg19&g=wgEncodeMapability. The file is in bigWig format, and we need to convert it to .bed format using bigWigToWig and BEDOPS wig2bed. Then, find the overlap region between .bed file and Anchor regions using Bedtools map. 
-> 1) &nbsp; bedtools map -a Anchor1.bed -b mappability.bed -c 5 -o mean > mappability1.bed <br />
-> 2) &nbsp; bedtools map -a Anchor2.bed -b mappability.bed -c 5 -o mean > mappability2.bed <br />
-> 3) &nbsp; Compute the average of 5th column in mappability1.bed and mappability2.bed, and call the variable name â€œmappaAvgâ€?<br />
+> 1) &nbsp; bedtools map -a Anchor1.bed -b mappability.bed -c 5 -o mean| cut -f4 > mappability1.bed <br />
+> 2) &nbsp; bedtools map -a Anchor2.bed -b mappability.bed -c 5 -o mean| cut -f4 > mappability2.bed <br />
+> 3) &nbsp; Compute the average of mappability1.bed and mappability2.bed, and call the variable name â€œmappaAvgâ€?<br />
 > 4) &nbsp; If you don’t find the mappability in the above link, you can prepare by yourself using ngs-tools.  <br />
 - Example for rice RS1 reference genome we can find like
   - sh mappability.sh -i mhRS63.fa -l 35 -p mappability > mappability.bed 
