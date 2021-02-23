@@ -20,7 +20,7 @@ Using the out.spet file in the ChIA-PET Tool V3 output, we can compute the self-
 > 1) &nbsp; awk '{if($2<$5){print $1"\t"$2"\t"$5}else{print $1"\t"$5"\t"$2}}' out.spet  > out.spet.bed3 <br />
 > 2) &nbsp; bedtools coverage -a Anchor1.bed -b out.spet.bed3| cut -f4 > self1.bed <br />
 > 2) &nbsp; bedtools coverage -a Anchor2.bed -b out.spet.bed3| cut -f4 > self2.bed <br />
-> 2) &nbsp; then compute the average of it and call the variable name â€œselfAvgâ€? <br />
+> 2) &nbsp; then compute the average of it and call the variable name “selfAvg” <br />
 
 #### 3) Mappability 
 Download the mappability score for human genome version hg19 using http://genome-asia.ucsc.edu/cgi-bin/hgFileUi?db=hg19&g=wgEncodeMapability. The file is in bigWig format, and we need to convert it to .bed format using bigWigToWig and BEDOPS wig2bed. Then, find the overlap region between .bed file and Anchor regions using Bedtools map. 
