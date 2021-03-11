@@ -1,6 +1,6 @@
 ## **ChIAMM2**
 ## Introduction
-**Ch**romatin **I**nteraction **A**nalysis with **P**aired-**E**nd **T**ag (**ChIA-PET**) sequencing is a technology to study genome-wide long-range chromatin interactions bound by protein factors. **ChIAMM2** the updated form of **ChIAMM** used to find the long-range chromosomal interaction data in the ChIA-PET experiment using the truncated negative binomial regression model in the Bayesian framework.  
+**Ch**romatin **I**nteraction **A**nalysis with **P**aired-**E**nd **T**ag (**ChIA-PET**) sequencing is a technology to study genome-wide long-range chromatin interactions bound by protein factors. **ChIAMM2** the updated form of [**ChIAMM**](https://github.com/Yab29/ChIAMM), used to find the long-range chromosomal interaction data in the ChIA-PET experiment using the truncated negative binomial regression model in the Bayesian framework.  
 ### The ChIAMM2 requires the following dependencies:
 > 1) &nbsp; R (≥3.4.0) <br />
 > 2) &nbsp; StanHeaders (≥ 2.18.1)<br />
