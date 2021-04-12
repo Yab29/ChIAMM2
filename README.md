@@ -10,7 +10,7 @@
 > 6) &nbsp; bayesplot ( ≥1.7.1)<br />
 
 ### Data preparation
-Before executing the **ChIAMM2**, you need to analyze the raw ChIA-PET data using ChIA-PET Tool V3 without any FDR cutoff value. From the ChIA-PET Tool output files, the file out.cluster.withpvalue.txt will be used for downstream analysis in ChIAMM. Specifically, the first 11 columns in the file out.cluster.withpvalue.txt will be used: chrom1, start1, end1, chrom2, start2, end2, ipet count, type, distance, tag count within anchor 1 and tag count within anchor 2. We call chrom1, start1, end1 as Anchor1, and chrom2, start2, end2 as Anchor2.  
+Before executing the **ChIAMM2**, you need to analyze the raw ChIA-PET data using ChIA-PET Tool V3 without any FDR cutoff value. From the ChIA-PET Tool output files, the file out.cluster.withpvalue.txt will be used for downstream analysis in ChIAMM2. Specifically, the first 11 columns in the file out.cluster.withpvalue.txt will be used: chrom1, start1, end1, chrom2, start2, end2, ipet count, type, distance, tag count within anchor 1 and tag count within anchor 2. We call chrom1, start1, end1 as Anchor1, and chrom2, start2, end2 as Anchor2.  
 ### Computing the Systematic Biases 
 ####  1) Average tag counts 
 Call the variables tag count within anchor 1 and tag count within anchor 2 as tagcou1 and tagcou2 respectively, and compute the average of it call the variable name “tagcouAvg”. 
