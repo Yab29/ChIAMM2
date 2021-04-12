@@ -53,7 +53,7 @@ We need to organize the input file for inter- and intra-chromosomal interaction 
 
 ### Usage
 	Rscript ChIAMM2.R -h
-  	Usage: ChIAMM.R [-[-input|i] <character>] [-[-prefix|p] [<character>]] [-[-inter|e]] [-[-iter|r] [<integer>]] [-[-warmup|w] [<integer>]] [-[-help|h]]
+  	Usage: ChIAMM2.R [-[-input|i] <character>] [-[-prefix|p] [<character>]] [-[-inter|e]] [-[-iter|r] [<integer>]] [-[-warmup|w] [<integer>]] [-[-help|h]]
          -i| --input      input file
          -p| --prefix     output prefix (default "out")
          -e| --inter      the input is inter-chromosomal, if not, intra-chromosomal interactions data
